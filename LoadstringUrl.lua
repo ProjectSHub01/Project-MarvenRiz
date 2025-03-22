@@ -10,7 +10,9 @@ _G.Map = {
 }
 
 if _G.Map[game.PlaceId] then
+  pcall(function()
     loadstring(game:HttpGet(_G.Map[game.PlaceId].Url))()
+  end
 else
     game.Players.LocalPlayer:Kick("Not Supported Map")
 end
