@@ -1,4 +1,4 @@
-local Map = {
+_G.Map = {
   ["Information"] = {
     Discord = "nil",
     YouTube = "nil"
@@ -9,8 +9,8 @@ local Map = {
   }
 }
 
-if Map[game.PlaceId] then
-    loadstring(game:HttpGet(Map[game.PlaceId].Url))()
+if _G.Map[game.PlaceId] then
+    loadstring(game:HttpGet(_G.Map[game.PlaceId].Url))()
 else
     game.Players.LocalPlayer:Kick("Not Supported Map")
 end
