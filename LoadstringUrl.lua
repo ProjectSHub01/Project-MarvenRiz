@@ -14,3 +14,5 @@ if _G.Map[game.PlaceId] then
 else
     game.Players.LocalPlayer:Kick("Not Supported Map")
 end
+
+return _G.Map
