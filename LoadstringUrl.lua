@@ -12,11 +12,11 @@ local function Link()
     return Map
 end
 
-local Map = Link()
+_G.Map = Link()
 
-if Map[game.PlaceId] then
+if _G.Map[game.PlaceId] then
     pcall(function()
-        loadstring(game:HttpGet(Map[game.PlaceId].Url))()
+        loadstring(game:HttpGet(_G.Map[game.PlaceId].Url))()
     end)
 else
     game.Players.LocalPlayer:Kick("Not Supported Map")
