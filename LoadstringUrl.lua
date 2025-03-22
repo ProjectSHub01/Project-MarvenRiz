@@ -4,7 +4,7 @@ _G.Map = {
     YouTube = "nil"
   },
   [90823899207715] = {
-    Url = "your_github_link_here",
+    Url = "https://raw.githubusercontent.com/ProjectSHub01/Project-MarvenRiz/refs/heads/main/Arcane%20Piece.lua",
     Status = "🔵 [Beta]"
   }
 }
