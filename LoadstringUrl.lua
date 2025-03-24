@@ -6,7 +6,7 @@ local function Link()
         },
         [90823899207715] = {
             Url = "https://raw.githubusercontent.com/ProjectSHub01/Project-MarvenRiz/refs/heads/main/Arcane%20Piece.lua",
-            Status = "🔵 [Beta]"
+            Status = "🟢"
         }
     }
     return Map
