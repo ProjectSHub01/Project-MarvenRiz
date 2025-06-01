@@ -146,6 +146,8 @@ if game.PlaceId == 126884695634066 then
 	local dots = {".", "..", "..."}
 	while wait(0.1) do
 	game:GetService("TeleportService"):TeleportToPlaceInstance(91867617264223, "9fecb0a9-0b54-416d-9ffa-bb05adcbb0ff", game.Players.LocalPlayer)
+	game:GetService("TeleportService"):TeleportToPlaceInstance(91867617264223, "0207332a-8a7e-4b84-8ab5-0652d33a4790", game.Players.LocalPlayer)
+	game:GetService("TeleportService"):TeleportToPlaceInstance(91867617264223, "cda8bbc6-dcd0-416d-841c-167d26121c0f", game.Players.LocalPlayer)
 	if tick() - lastTick >= 1 then
 		lastTick = tick()
 		SetText(Status, "🌍 Status: Finding a server" .. dots[index], Color3.fromRGB(128, 128, 128))
