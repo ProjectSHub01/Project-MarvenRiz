@@ -1,3 +1,28 @@
+local ScreenGui1 = Instance.new("ScreenGui")
+local ImageButton1 = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+
+ScreenGui1.Name = "ImageButton"
+ScreenGui1.Parent = game.CoreGui
+ScreenGui1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ImageButton1.Parent = ScreenGui1
+ImageButton1.BackgroundTransparency = 1
+ImageButton1.BorderSizePixel = 0
+ImageButton1.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
+ImageButton1.Size = UDim2.new(0, 50, 0, 50)
+ImageButton1.Draggable = true
+ImageButton1.Image = "rbxassetid://71208734479010"
+UICorner.Parent = ImageButton1
+
+ImageButton1.MouseButton1Down:Connect(function()
+    local dupeGui = game.CoreGui:FindFirstChild("Dupe MarvenRiz X")
+    if dupeGui and dupeGui:FindFirstChild("Frame") then
+        local frame = dupeGui.Frame
+        frame.Visible = not frame.Visible
+    end
+end)
+
 local _s = Instance.new("ScreenGui", game.CoreGui)
 local _f1 = Instance.new("Frame")
 local _f2 = Instance.new("Frame")
